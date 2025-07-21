@@ -1826,7 +1826,7 @@
         {
           "key": "solid",
           "color": "#FA2828FF",
-          "mask": 15,
+          "mask": 31,
           "flag": 15,
           "name": "FIELD_SOLID",
           "icon": "FFFFFFFFFFFFFFFF"
@@ -1834,7 +1834,7 @@
         {
           "key": "top",
           "color": "#2828FAFF",
-          "mask": 15,
+          "mask": 31,
           "flag": 1,
           "name": "FIELD_COLLISION_TOP",
           "icon": "FFFFFF0000000000",
@@ -1843,7 +1843,7 @@
         {
           "key": "bottom",
           "color": "#FFFA28FF",
-          "mask": 15,
+          "mask": 31,
           "flag": 2,
           "name": "FIELD_COLLISION_BOTTOM",
           "icon": "0000000000FFFFFF",
@@ -1852,7 +1852,7 @@
         {
           "key": "left",
           "color": "#FA28FAFF",
-          "mask": 15,
+          "mask": 31,
           "flag": 4,
           "name": "FIELD_COLLISION_LEFT",
           "icon": "E0E0E0E0E0E0E0E0",
@@ -1861,11 +1861,43 @@
         {
           "key": "right",
           "color": "#28FAFAFF",
-          "mask": 15,
+          "mask": 31,
           "flag": 8,
           "name": "FIELD_COLLISION_RIGHT",
           "icon": "0707070707070707",
           "multi": true
+        },
+        {
+          "key": "slope_tl",
+          "color": "#0000FFFF",
+          "mask": 31,
+          "flag": 21,
+          "name": "FIELD_COLLISION_SLOPE_TOP_LEFT",
+          "icon": "0F3F7F7FFFFFFFFF"
+        },
+        {
+          "key": "slope_tr",
+          "color": "#0000FFFF",
+          "mask": 31,
+          "flag": 25,
+          "name": "FIELD_COLLISION_SLOPE_TOP_RIGHT",
+          "icon": "F0FCFEFEFFFFFFFF"
+        },
+        {
+          "key": "slope_bl",
+          "color": "#0000FFFF",
+          "mask": 31,
+          "flag": 22,
+          "name": "FIELD_COLLISION_SLOPE_BOTTOM_LEFT",
+          "icon": "FFFFFFFF7F7F3F0F"
+        },
+        {
+          "key": "slope_br",
+          "color": "#0000FFFF",
+          "mask": 31,
+          "flag": 26,
+          "name": "FIELD_COLLISION_SLOPE_BOTTOM_RIGHT",
+          "icon": "FFFFFFFFFEFEFCF0"
         }
       ]
     },

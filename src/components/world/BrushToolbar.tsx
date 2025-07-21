@@ -252,6 +252,7 @@ const BrushToolbar = ({ hasFocusForKeyboardShortcuts }: BrushToolbarProps) => {
         }
 
         let newValue = selectedTile.flag;
+        const mask = selectedTile.mask ?? 0xff;
 
         if (e.shiftKey) {
           if (selectedTile.multi) {
@@ -276,6 +277,7 @@ const BrushToolbar = ({ hasFocusForKeyboardShortcuts }: BrushToolbarProps) => {
         dispatch(
           editorActions.setSelectedTileType({
             tileType: newValue,
+            tileMask: mask,
           }),
         );
       }

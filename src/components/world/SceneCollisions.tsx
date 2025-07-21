@@ -115,7 +115,7 @@ const SceneCollisions = ({
       for (let yi = 0; yi < height; yi++) {
         for (let xi = 0; xi < width; xi++) {
           const collisionIndex = width * yi + xi;
-          const tile = collisions[collisionIndex] ?? 0;
+          let tile = collisions[collisionIndex] ?? 0;
           let unknownTile = tile !== 0;
 
           for (const tileDef of sortedTileDefs) {
@@ -125,6 +125,7 @@ const SceneCollisions = ({
               if (tileDef.icon) {
                 unknownTile = false;
               }
+              tile = tile & ~tileDef.flag; // Clear bits for matched tile
             }
           }
           if (
