@@ -1822,6 +1822,14 @@
       "key": "ADVENTURE",
       "label": "GAMETYPE_ADVENTURE",
       "files": ["include/states/adventure.h", "src/states/adventure.c"],
+      "extraActorCollisionFlags": [
+        {
+          "key": "solid",
+          "label": "FIELD_IS_SOLID",
+          "description": "FIELD_IS_SOLID_DESC",
+          "setFlag": "solid"
+        }
+      ],
       "collisionTiles": [
         {
           "key": "solid",
