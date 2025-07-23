@@ -573,6 +573,7 @@ const BrushToolbar = ({ hasFocusForKeyboardShortcuts }: BrushToolbarProps) => {
                   const selected = isCollisionTileActive(
                     selectedTileType,
                     tileDef,
+                    namedCollisionTileDefs,
                   );
                   return (
                     <Fragment key={tileTypeIndex}>
