@@ -660,8 +660,8 @@ export const compileBounds = ({
   const bH = boundsHeight || 16;
   return {
     left: enginePxToSubPx(bX),
-    bottom: enginePxToSubPx(7 - bY),
-    right: enginePxToSubPx(bX + bW - 1),
+    bottom: `${enginePxToSubPx(8 - bY)} - 1`,
+    right: `${enginePxToSubPx(bX + bW)} - 1`,
     top: enginePxToSubPx(8 - (bY + bH)),
   };
 };
